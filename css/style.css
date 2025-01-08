@@ -13,20 +13,57 @@
 header{
     position: relative;
 
+    #carouselExampleIndicators{
+        img{
+            max-height: 1450px;
+            height: 100%;
+        }
+    }
+
     nav{
         .nav_content{
             position: absolute;
             top: 0;
             left: 74rem;
+
+            input{ 
+                background: none;
+                border: none;
+                border-bottom:3px solid pink;
+                outline: none;
+                color: aqua;
+            }
+            ::placeholder{
+                color: #fff;
+                font-size: 19px;
+                font-weight: 600;
+            }
         }
 
         ul{
             display: flex;
-            gap: 40px;
+            /* justify-content: space-between; */
+            align-items: center;
+            gap: 50px;
             list-style: none;
-            
+ 
             a{
+                position: relative;
                 text-decoration: none;
+                transition: all 0.3s ease;
+                color: #ffc0cb;
+                font-size: 30px;
+                font-weight: 700;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border-bottom: 1px solid rgb(46 204 113 / 80%);
+                text-align: center;
+
+                :hover{
+                    position: fixed;
+                    background: rgb(46 204 113 / 80%);
+                    transition: 0.5s;
+                    padding: 12px 10px;
+                }
             }
         }
     }
